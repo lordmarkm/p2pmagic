@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>p2pmagic</groupId>
+    <artifactId>p2p-admin</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>p2p-admin-core</artifactId>
+  <name>P2P Admin :: Core</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>p2pmagic</groupId>
+      <artifactId>p2p-commons-core</artifactId>
+    </dependency>
+  </dependencies>
+</project>

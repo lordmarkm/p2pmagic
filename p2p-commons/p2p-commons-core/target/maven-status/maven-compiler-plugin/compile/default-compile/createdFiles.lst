@@ -1,0 +1,6 @@
+com/p2p/commons/repo/mtg/CardRepo.class
+com/p2p/commons/repo/player/MagicPlayerRepo.class
+com/p2p/commons/models/mtg/Expansion.class
+com/p2p/commons/models/player/MagicPlayer.class
+com/p2p/commons/models/mtg/Card.class
+com/p2p/commons/repo/mtg/ExpansionRepo.class

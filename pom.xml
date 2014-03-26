@@ -23,9 +23,11 @@
     <c3p0.version>0.9.2.1</c3p0.version>
     <joda-time.version>2.1</joda-time.version>
     <jackson.version>1.9.12</jackson.version>
+    <swagger.version>0.6.6</swagger.version>
     <commons.lang.version>2.3</commons.lang.version>
     <joda.version>2.2</joda.version>
     <guava.version>15.0</guava.version>
+    <servlet.version>3.1.0</servlet.version>
 
     <!-- LOGGING -->
     <logback.version>1.0.9</logback.version>
@@ -57,6 +59,11 @@
         <scope>test</scope>
       </dependency>
 
+      <dependency>
+        <groupId>p2pmagic</groupId>
+        <artifactId>p2p-commons-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
       <dependency>
         <groupId>p2pmagic</groupId>
         <artifactId>p2p-commons-models</artifactId>
@@ -181,13 +188,6 @@
         <version>${aspectj.version}</version>
       </dependency>
 
-      <!-- CGLIB -->
-      <dependency>
-        <groupId>cglib</groupId>
-        <artifactId>cglib</artifactId>
-        <version>${cglib.version}</version>
-      </dependency>
-
       <!-- LOGGING -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
@@ -195,11 +195,45 @@
         <version>${logback.version}</version>
       </dependency>
 
-      <!-- COMMINS -->
+      <!-- COMMONS -->
       <dependency>
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
         <version>${commons.lang.version}</version>
+      </dependency>
+
+      <!-- SWAGGER -->
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mangofactory</groupId>
+        <artifactId>swagger-springmvc</artifactId>
+        <version>${swagger.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <!-- J2EE LIBRARIES -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>${servlet.version}</version>
+        <scope>provided</scope>
       </dependency>
 
       <!-- TEST -->
@@ -244,5 +278,7 @@
 
   <modules>
     <module>p2p-commons</module>
+    <module>p2p-admin</module>
+    <module>p2p-apidoc</module>
   </modules>
 </project>
