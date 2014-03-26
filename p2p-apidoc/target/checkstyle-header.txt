@@ -1,5 +1,0 @@
-^<\?xml.*>$
-^.*$
-^.{0,4}Copyright \(c\) (\d\d\d\d). Medcurial, Inc\.$
-^.{0,4}All rights reserved\.
-^.*$
