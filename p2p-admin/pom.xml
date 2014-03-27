@@ -10,6 +10,6 @@
   <name>P2P Admin</name>
   <modules>
     <module>p2p-admin-core</module>
-    <module>p2p-admin-web</module>
+    <module>p2p-admin-http</module>
   </modules>
 </project>
