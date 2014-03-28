@@ -10,7 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = {"com.baldy.commons.web.config", "com.baldy.commons.resourcedoc.config", "com.p2p.admin.http"})
+@ComponentScan(basePackages = {"com.baldy.commons.web.config",
+        "com.baldy.commons.resourcedoc.config",
+        "com.p2p.commons.config",
+        "com.p2p.admin.http"})
 @PropertySource({"classpath:app.properties"})
 @EnableAspectJAutoProxy
 public class AdminHttpConfig extends WebMvcConfigurerAdapter {

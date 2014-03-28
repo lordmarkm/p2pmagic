@@ -19,6 +19,10 @@
       <classifier>classes</classifier>
     </dependency>
     <dependency>
+      <groupId>baldy.commons.security</groupId>
+      <artifactId>baldy-commons-security-services</artifactId>
+    </dependency>
+    <dependency>
       <groupId>p2pmagic</groupId>
       <artifactId>p2p-commons-core</artifactId>
     </dependency>

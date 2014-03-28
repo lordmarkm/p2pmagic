@@ -31,6 +31,7 @@
     <guava.version>15.0</guava.version>
     <servlet.version>3.1.0</servlet.version>
     <freemarker.version>2.3.20</freemarker.version>
+    <dozer.version>5.4.0</dozer.version>
 
     <!-- LOGGING -->
     <logback.version>1.0.9</logback.version>
@@ -237,6 +238,19 @@
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
         <version>${commons.lang.version}</version>
+      </dependency>
+
+      <!-- DOZER -->
+      <dependency>
+        <groupId>net.sf.dozer</groupId>
+        <artifactId>dozer</artifactId>
+        <version>${dozer.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
