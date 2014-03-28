@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   metadata-complete="true">
 
-  <display-name>Racket Manager</display-name>
+  <display-name>P2P Magic</display-name>
 
   <!-- Java-based Spring container definition -->
   <context-param>
@@ -61,20 +61,4 @@
   </filter-mapping>
   -->
 
-  <!-- Allows for lazy init in view -->
-  <filter>
-    <filter-name>oemInViewFilter</filter-name>
-    <filter-class>
-      org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
-    <init-param>
-      <param-name>entityManagerFactoryBeanName</param-name>
-      <param-value>entityManagerFactory</param-value>
-    </init-param>
-  </filter>
-
-  <filter-mapping>
-    <filter-name>oemInViewFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
-  
 </web-app>

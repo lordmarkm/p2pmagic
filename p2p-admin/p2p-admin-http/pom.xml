@@ -11,6 +11,12 @@
   <name>P2P Admin :: Web</name>
 
   <dependencies>
+
+    <dependency>
+      <groupId>p2pmagic</groupId>
+      <artifactId>p2p-admin-core</artifactId>
+    </dependency>
+
     <dependency>
       <groupId>baldy.commons.web</groupId>
       <artifactId>baldy-commons-web</artifactId>
@@ -18,6 +24,28 @@
     <dependency>
       <groupId>baldy.commons.security</groupId>
       <artifactId>baldy-commons-security-services</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>baldy.commons</groupId>
+      <artifactId>baldy-commons-resourcedoc</artifactId>
+      <type>war</type>
+    </dependency>
+
+    <!-- LOGGING -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
     </dependency>
 
     <!-- ASPECTJ -->
@@ -30,17 +58,43 @@
 
   <!--########################################## BUILD ########################################## -->
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.mortbay.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
         <filtering>true</filtering>
       </resource>
     </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+      </plugin>
+
+      <!-- Overlay API documentation -->
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <overlays>
+            <overlay>
+              <groupId>baldy.commons</groupId>
+              <artifactId>baldy-commons-resourcedoc</artifactId>
+              <excludes>
+                <exclude>WEB-INF/classes/swagger.properties</exclude>
+              </excludes>
+            </overlay>
+            <overlay>
+              <groupId>baldy.commons</groupId>
+              <artifactId>baldy-commons-resourcedoc</artifactId>
+              <includes>
+                <include>WEB-INF/classes/swagger.properties</include>
+              </includes>
+              <filtered>true</filtered>
+            </overlay>
+          </overlays>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
