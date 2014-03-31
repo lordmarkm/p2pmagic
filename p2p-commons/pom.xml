@@ -10,5 +10,6 @@
   <name>P2P Magic :: Commons</name>
   <modules>
     <module>p2p-commons-core</module>
+    <module>p2p-commons-data</module>
   </modules>
 </project>

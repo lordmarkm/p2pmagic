@@ -12,6 +12,7 @@
   <modules>
     <module>p2p-admin-core</module>
     <module>p2p-admin-http</module>
+    <module>p2p-admin-cm</module>
   </modules>
 
   <dependencyManagement>

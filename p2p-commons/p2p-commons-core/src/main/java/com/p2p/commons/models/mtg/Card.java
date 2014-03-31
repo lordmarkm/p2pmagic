@@ -28,6 +28,15 @@ public class Card extends BaseBaldyEntity {
     @JoinColumn(name="exp")
     private Expansion expansion;
 
+    /**
+     * Accomodate things like:
+     * Remand (FNM Promo)
+     * Remand (Foil)
+     * etc
+     */
+    @Column
+    private String displayName;
+
     @Column
     private String cost;
 
@@ -123,6 +132,14 @@ public class Card extends BaseBaldyEntity {
 
     public void setRarity(String rarity) {
         this.rarity = rarity;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 
 }

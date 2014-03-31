@@ -16,7 +16,7 @@
     that makeup this application -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>com.p2p</param-value>
+    <param-value>com.p2p.admin</param-value>
   </context-param>
 
   <!-- Creates the Spring Container shared by all Servlets and Filters -->

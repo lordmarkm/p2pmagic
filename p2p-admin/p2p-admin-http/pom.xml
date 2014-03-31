@@ -16,7 +16,6 @@
       <groupId>p2pmagic</groupId>
       <artifactId>p2p-admin-core</artifactId>
     </dependency>
-
     <dependency>
       <groupId>baldy.commons.web</groupId>
       <artifactId>baldy-commons-web</artifactId>
