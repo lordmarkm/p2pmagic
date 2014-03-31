@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 })
 @EnableJpaRepositories(basePackages = {
         "com.baldy.commons.security.services",
-        "com.p2p.admin.cm.repo"
+        "com.p2p.commons.repo.*"
 })
 public class CoreConfig {
 

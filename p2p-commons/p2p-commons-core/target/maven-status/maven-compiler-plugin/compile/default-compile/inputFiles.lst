@@ -1,5 +1,6 @@
 /home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/models/player/MagicPlayer.java
 /home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/config/MapperConfig.java
+/home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/core/dto/ExpansionInfo.java
 /home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/repo/mtg/CardRepo.java
 /home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/repo/mtg/ExpansionRepo.java
 /home/mbmartinez/git/p2pmagic/p2p-commons/p2p-commons-core/src/main/java/com/p2p/commons/models/mtg/Expansion.java

@@ -22,6 +22,11 @@
         <artifactId>p2p-admin-core</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>p2pmagic</groupId>
+        <artifactId>p2p-admin-cm</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
