@@ -8,7 +8,7 @@
   </parent>
   <artifactId>p2p-admin-http</artifactId>
   <packaging>war</packaging>
-  <name>P2P Admin :: Web</name>
+  <name>P2P Magic :: Admin :: Web</name>
 
   <dependencies>
 

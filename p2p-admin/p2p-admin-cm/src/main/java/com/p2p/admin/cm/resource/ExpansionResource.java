@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.google.common.collect.Lists;
 import com.p2p.commons.core.dto.ExpansionInfo;
-import com.p2p.commons.models.mtg.Expansion;
-import com.p2p.commons.repo.mtg.ExpansionRepo;
+import com.p2p.commons.core.models.Expansion;
+import com.p2p.commons.core.repo.ExpansionRepo;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;

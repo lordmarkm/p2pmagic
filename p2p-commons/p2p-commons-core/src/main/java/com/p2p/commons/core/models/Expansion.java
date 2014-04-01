@@ -1,4 +1,4 @@
-package com.p2p.commons.models.mtg;
+package com.p2p.commons.core.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

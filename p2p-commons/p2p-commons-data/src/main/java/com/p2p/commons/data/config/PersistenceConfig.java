@@ -64,7 +64,7 @@ public class PersistenceConfig {
         entityManagerFactory.setPackagesToScan(new String[] {
                 "com.baldy.commons.models",
                 "com.baldy.commons.security.models",
-                "com.p2p.commons.models.*"
+                "com.p2p.**.models"
         });
         entityManagerFactory.setPersistenceProvider(new HibernatePersistence());
         entityManagerFactory.setJpaProperties(hibernateProperties());

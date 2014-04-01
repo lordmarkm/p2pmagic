@@ -7,7 +7,7 @@
     <version>1.0</version>
   </parent>
   <artifactId>p2p-admin-core</artifactId>
-  <name>P2P Admin :: Core</name>
+  <name>P2P Magic :: Admin :: Core</name>
 
   <dependencies>
     <dependency>

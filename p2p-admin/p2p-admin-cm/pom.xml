@@ -15,10 +15,24 @@
       <artifactId>p2p-admin-core</artifactId>
     </dependency>
 
+    <!-- Parser -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.7.2</version>
+    </dependency>
+
     <!-- Spring Data -->
     <dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-jpa</artifactId>
+    </dependency>
+
+    <!-- Test -->
+    <dependency>
+      <groupId>baldy.commons</groupId>
+      <artifactId>baldy-commons-test</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

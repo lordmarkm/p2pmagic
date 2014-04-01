@@ -1,4 +1,4 @@
-package com.p2p.commons.models.player;
+package com.p2p.proper.core.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

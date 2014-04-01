@@ -1,4 +1,4 @@
-package com.p2p.commons.models.mtg;
+package com.p2p.commons.core.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ import com.baldy.commons.models.BaseBaldyEntity;
 @Table(name="card")
 public class Card extends BaseBaldyEntity {
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name="exp")
     private Expansion expansion;
 

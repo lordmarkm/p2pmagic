@@ -4,6 +4,8 @@ com/p2p/commons/models/mtg/Expansion.class
 com/p2p/commons/repo/mtg/ExpansionRepo.class
 com/p2p/commons/config/CoreConfig.class
 com/p2p/commons/repo/player/MagicPlayerRepo.class
+com/p2p/commons/core/dto/CardInfo.class
+com/p2p/commons/config/MapperConfig$1.class
 com/p2p/commons/models/player/MagicPlayer.class
 com/p2p/commons/models/mtg/Card.class
 com/p2p/commons/config/MapperConfig.class

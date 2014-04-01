@@ -320,8 +320,6 @@
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
         <version>${maven.jetty.version}</version>
-        <!-- <configuration> <webAppConfig> <allowDuplicationFragmentNames>true</allowDuplicationFragmentNames> 
-          </webAppConfig> </configuration> -->
       </plugin>
     </plugins>
   </build>
@@ -329,5 +327,6 @@
   <modules>
     <module>p2p-commons</module>
     <module>p2p-admin</module>
+    <module>p2p-proper</module>
   </modules>
 </project>

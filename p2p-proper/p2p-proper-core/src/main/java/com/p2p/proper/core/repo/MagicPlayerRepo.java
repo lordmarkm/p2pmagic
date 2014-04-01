@@ -1,8 +1,8 @@
-package com.p2p.commons.repo.player;
+package com.p2p.proper.core.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.p2p.commons.models.player.MagicPlayer;
+import com.p2p.proper.core.models.MagicPlayer;
 
 /**
  * @author mbmartinez
